@@ -1,10 +1,14 @@
+@bgColor: #252525;
+@mainColor: #3d9add;
+
 html {
   height: 100%;
 }
 
 body {
-  min-height: 100%;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: relative;
+  background-color: @bgColor !important;
 
   .div-login-container{
     width: 50%;
@@ -13,17 +17,25 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    .div-badge-container{
-      text-align: center;
-    }
-
     h1{
       text-align: center;
+      color: @mainColor;
       margin-bottom: 50px;
     }
-    
+
+    .div-r-u-registered{
+      font-size: 10px;
+      text-align: right;
+    }
+  }
+}
+
+footer {
+  .div-badge-container{
+    text-align: center;
+
     img{
-      width: 75%;
+      width: 40%;
       max-width: 200px;
     }
   }
@@ -31,4 +43,5 @@ body {
 
 a {
   color: #00B7FF;
+  cursor: pointer;
 }
