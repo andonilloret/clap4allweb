@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+
+  $("#formLogin").submit( function( e ){
+    e.preventDefault();
+    alert("Estamos trabajando en este paso");
+  });
+
   if (typeof bowser !== 'undefined' && bowser !== null){
     if( bowser.android ) paintStoreBadge("android");
     if( bowser.iphone || bowser.ipad ) paintStoreBadge("ios");
