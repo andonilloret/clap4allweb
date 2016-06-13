@@ -13,16 +13,16 @@
   </head>
   <body>
     <div class="div-login-container">
-      <h1>{{ title }}</h1>
+      <img alt="Clap4All" src="images/logoclap4all.png"/>
       <form id="formLogin">
         <div class="form-group">
-          <input class="form-control" type="email" name="username" placeholder="Email"/>
+          <input class="input-text-login" type="email" name="username" placeholder="Email"/>
         </div>
         <div class="form-group">
-          <input class="form-control" type="password" name="password" placeholder="Contraseña"/>
+          <input class="input-text-login" type="password" name="password" placeholder="Contraseña"/>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-default form-control">Entrar</button>
+          <button type="submit" class="form-control">Entrar</button>
         </div>
       </form>
       <div class="div-r-u-registered">

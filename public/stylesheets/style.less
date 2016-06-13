@@ -8,7 +8,6 @@ html {
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   position: relative;
-  background-color: @bgColor !important;
 
   .div-login-container{
     width: 50%;
@@ -17,15 +16,40 @@ body {
     margin-left: auto;
     margin-right: auto;
 
+    .input-text-login {
+      text-align: center;
+      outline: none;
+      padding-bottom: 3px;
+      border: 0px;
+      border-bottom: 1px solid #252525;
+      width: 100%;
+    }
+
+    .div-r-u-registered{
+      font-size: 10px;
+      text-align: center;
+    }
+
+    img{
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
     h1{
       text-align: center;
       color: @mainColor;
       margin-bottom: 50px;
     }
 
-    .div-r-u-registered{
-      font-size: 10px;
-      text-align: right;
+    button {
+      background: #252525;
+      color: #fff;
+      border: 0;
+      transition: all 0.2s ease 0s;
+    }
+
+    button:hover{
+      background: #3d9add;
     }
   }
 }
